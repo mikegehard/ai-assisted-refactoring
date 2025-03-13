@@ -1,5 +1,7 @@
 # AI Refactoring Agent: Technical Specification
 
+[Claude Project](https://claude.ai/chat/65ae8399-ae0f-4fac-ba3b-d730ad081df7)
+
 ## 1. Overview
 The AI Refactoring Agent is a GitHub Action that automatically analyzes repositories and suggests code refactorings as pull requests. It runs on a nightly schedule, identifying potential improvements to code quality without requiring manual developer intervention. The system leverages GitHub's built-in AI capabilities to ensure code never leaves the GitHub infrastructure.
 
