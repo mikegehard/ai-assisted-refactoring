@@ -1,0 +1,17 @@
+name: 'AI Refactoring Agent'
+description: 'Automatically analyzes repositories and suggests code refactorings as pull requests'
+author: 'Mike Gehard'
+
+branding:
+  icon: 'code'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GitHub token used to create pull requests'
+    required: true
+    default: ${{ github.token }}
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

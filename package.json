@@ -1,0 +1,45 @@
+{
+  "name": "ai-refactoring-agent",
+  "version": "0.1.0",
+  "description": "GitHub Action that automatically analyzes repositories and suggests code refactorings as pull requests",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --passWithNoTests",
+    "format": "prettier --write **/*.ts",
+    "package": "npm run lint && npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikegehard/ai-assisted-refactoring.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "refactoring",
+    "ai",
+    "code-quality"
+  ],
+  "author": "Mike Gehard",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "@octokit/rest": "^20.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.12.8",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "@vercel/ncc": "^0.38.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-github": "^4.10.1",
+    "eslint-plugin-jest": "^28.11.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.8.2"
+  }
+}

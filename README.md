@@ -5,9 +5,8 @@ A GitHub Action that automatically analyzes repositories and suggests code refac
 ## Key Features
 
 - **Automated Refactoring**: Identifies and suggests code improvements automatically
-- **Security-First**: Leverages GitHub's built-in AI capabilities, ensuring code never leaves GitHub infrastructure
 - **Developer-Friendly**: Creates clear, actionable pull requests that are easy to review
-- **Configurable**: Flexible settings for schedule, directories, and refactoring types
+- **Configurable**: Uses sensible defaults while maintaining flexibility
 
 ## Initial Language Support
 
@@ -21,15 +20,6 @@ A GitHub Action that automatically analyzes repositories and suggests code refac
 - Simple method extraction
 - Removal of duplicate code
 - Dead code elimination
-- Simple structural improvements
-
-## Security Features
-
-- Pattern detection for secrets protection
-- Code integrity safeguards
-- Transparent AI processing
-- Granular repository access controls
-- Comprehensive audit logging
 
 ## Getting Started
 
@@ -41,7 +31,7 @@ This project is currently in development. The MVP (Phase 1) development timeline
 
 ## Contributing
 
-Guidelines for contributing will be added as the project progresses.
+See [DEVELOPMENT.md](DEVELOPMENT.md) for information on setting up the development environment and contributing to the project.
 
 ## License
 
